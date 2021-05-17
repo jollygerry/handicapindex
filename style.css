@@ -1,0 +1,207 @@
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://static.seetheworld.com/image_uploader/photos/94/original/vintage-golf-cup-2018-les-gets-les-gets-2.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  #title {
+    margin-left: 15rem;
+    font-size: 1.25rem;
+    color: white;
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10px;
+    font-size: 1.25rem;
+  }
+  #menu {
+    border: 2px solid white;
+    height: 420px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+  }
+  #logo-div {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url("https://yt3.ggpht.com/ytc/AAUvwnhB0AccbMBJcZDHWXhqsGJ37tPq1ZgzQxFtRCB0gQ=s900-c-k-c0x00ffffff-no-rj");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 5rem;
+  }
+  #add-score-div {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    background-color: #4f4f4f;
+    color: white;
+  }
+  #view-rounds-div {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    background-color: #4f4f4f;
+    color: white;
+  }
+  #view-rounds-div,
+  #add-score-div,
+  #logo-div {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #score-modal {
+    z-index: 10;
+    position: absolute;
+    top: -50px;
+    left: -2px;
+    height: 520px;
+    width: 250px;
+    border: 2px solid white;
+    display: none;
+    color: white;
+    padding: 2px;
+    background-color: #4f4f4f;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4), 0 9px 30px 0 rgba(0, 0, 0, 0.38);
+    border-radius: 5px;
+  }
+  #close,
+  #close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+  }
+  #close:hover,
+  #close:focus,
+  #close2:hover,
+  #close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #rounds-modal {
+    z-index: 10;
+    position: absolute;
+    top: -50px;
+    right: -2px;
+    height: 520px;
+    width: 250px;
+    border: 2px solid white;
+    display: none;
+    background: white;
+    font-size: 0.9rem;
+    padding: 2px 0px;
+    background-color: #cccccc;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4), 0 9px 30px 0 rgba(0, 0, 0, 0.38);
+    border-radius: 5px;
+  }
+  #rounds-modal li {
+    background-color: white;
+    margin: 1px;
+    padding: 2px;
+  }
+  #rounds-modal-top {
+    height: 30px;
+    width: 100%;
+    margin-top: -16px;
+    margin-right: -10px
+  }
+  #score-modal-top {
+    height: 10px;
+    width: 100%;
+    margin-top: -16px;
+    margin-right: -10px
+  }
+  #submit-score {
+    margin: 10px 0px 0px 2px;
+  }
+  #reset,
+  #submit-score {
+    border: 5px solid black;
+    background-color: black;
+    font-family: "Montserrat";
+    color: white;
+    transition-duration: 0.5s;
+  }
+  #reset:hover,
+  #submit-score:hover {
+    border: 5px solid white;
+    background-color: white;
+    font-family: "Montserrat";
+    color: black;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e600db, 0 0 20px #e600db, 0 0 25px #e600db, 0 0 30px #e600db, 0 0 35px #e600db;
+  }
+  .material-icons {
+    margin: 5px;
+    color: white;
+  }
+  @media only screen and (max-width: 550px) {
+    #menu {
+    height: 500px;
+    width: 320px;
+    }
+    #score-modal {
+    top: -10px;
+    left: -2px;
+    height: 520px;
+    width: 160px;
+  }
+    #rounds-modal {
+    top: -10px;
+    right: -2px;
+    height: 520px;
+    width: 160px;
+  }
+  #title {
+    margin-left: 82px;
+    font-size: 1.1rem;
+    color: white;
+  }
+  }
+  @media only screen and (max-device-width: 400px) {
+    body {
+    background-image: url('https://www.bandondunesgolf.com/sites/default/files/blog/wallpapers/116B7668_OM07.jpg');
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: inherit;
+  }
+    #menu {
+    height: 500px;
+    width: 320px;
+  }
+    #score-modal {
+    top: -10px;
+    left: -2px;
+    height: 520px;
+    width: 160px;
+  }
+    #rounds-modal {
+    top: -10px;
+    right: -2px;
+    height: 520px;
+    width: 160px;
+  }
+  #title {
+    margin-left: 82px;
+    font-size: 1.1rem;
+    color: white;
+  }
+  }
